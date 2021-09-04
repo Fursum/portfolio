@@ -1,0 +1,175 @@
+.content {
+  $color-black: #282825;
+  $color-white: #fcfbf4;
+  $card-width: 32rem;
+  $card-height: 18rem;
+
+  font-family: "Open Sans", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+
+  .outerCard {
+    //SET COLORS
+    background-color: $color-white;
+    color: $color-black;
+
+    &:nth-child(even) {
+      background-color: $color-black;
+      color: $color-white;
+    }
+
+    .innerCard {
+      display: flex;
+      flex: 1 1 0%;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      padding-block: 5rem;
+      padding-inline: clamp(1rem, 4rem, 10vw);
+      gap: 2.5rem;
+
+
+      max-width: 80rem;
+      margin: 0 auto;
+
+      //Equally divide cards
+      > div {
+        flex: 1 1 15rem;
+      }
+
+      .textSide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 20rem;
+
+        font-size: 1.5rem;
+
+        //Text polishing
+        :first-child {
+          margin: 0;
+          font-weight: 850;
+          letter-spacing: -0.05rem;
+          line-height: 110%;
+          padding-bottom: 1rem;
+        }
+
+        :last-child {
+          margin: 0;
+          font-weight: 500;
+        }
+      }
+      .imageSide {
+        position: relative;
+
+        .svgContainer {
+          position: relative;
+          max-width: $card-width;
+          max-height: $card-height;
+
+          border-radius: 0.25rem;
+          overflow:hidden;
+
+          //Center the image
+          margin: 0 auto;
+
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+          transition: 200ms all;
+
+          //Block below sets the svg to fill the container
+          > div {
+            position: unset !important;
+          }
+          .image {
+            object-fit: contain;
+            height: 100% !important;
+            position: relative !important;
+            width: unset !important;
+          }
+          /************************************************/
+
+          //Coloring element
+          &::before {
+            content: "";
+            background-size: cover;
+            inset: 0px;
+            position: absolute;
+            max-width: 0;
+            z-index: 2;
+            transition: max-width 1000ms ease-in-out;
+          }
+        }
+
+        .buttonContainer {
+          position: absolute;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          margin-top: 1rem;
+
+          //Visit buttons
+          > a {
+            color: $color-white;
+            background-color: $color-black;
+
+            position: absolute;
+            margin: 0 auto;
+            padding-inline: 1rem;
+            padding-block: 0.5rem;
+            border-radius: 0.25rem;
+
+            font-size: x-large;
+            font-weight: 800;
+            text-align: center;
+
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+          }
+        }
+      }
+    }
+
+    //Change order of black cards
+    &:nth-child(even) {
+      .innerCard {
+        flex-direction: row-reverse;
+      }
+
+      .imageSide .buttonContainer > a {
+        color: $color-black;
+        background-color: $color-white;
+      }
+    }
+
+    //Hover trigger on parent
+    &:hover {
+      .innerCard .imageSide .svgContainer::before {
+        max-width: $card-width;
+      }
+    }
+  }
+
+  //SET HOVER IMAGES
+  :nth-child(1) {
+    .imageSide .svgContainer {
+      &::before {
+        background-image: url("/svg/Colored App.svg");
+      }
+    }
+  }
+  :nth-child(2) {
+    .imageSide .svgContainer {
+      &::before {
+        background-image: url("/svg/Colored Blog.svg");
+      }
+    }
+  }
+  :nth-child(3) {
+    .imageSide .svgContainer {
+      &::before {
+        background-image: url("/svg/Colored Commerce.svg");
+      }
+    }
+  }
+}

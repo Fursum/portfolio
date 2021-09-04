@@ -1,0 +1,118 @@
+.content {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.content .outerCard {
+  background-color: #fcfbf4;
+  color: #282825;
+}
+.content .outerCard:nth-child(even) {
+  background-color: #282825;
+  color: #fcfbf4;
+}
+.content .outerCard .innerCard {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-block: 5rem;
+  padding-inline: clamp(1rem, 4rem, 10vw);
+  gap: 2.5rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.content .outerCard .innerCard > div {
+  flex: 1 1 15rem;
+}
+.content .outerCard .innerCard .textSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 20rem;
+  font-size: 1.5rem;
+}
+.content .outerCard .innerCard .textSide :first-child {
+  margin: 0;
+  font-weight: 850;
+  letter-spacing: -0.05rem;
+  line-height: 110%;
+  padding-bottom: 1rem;
+}
+.content .outerCard .innerCard .textSide :last-child {
+  margin: 0;
+  font-weight: 500;
+}
+.content .outerCard .innerCard .imageSide {
+  position: relative;
+}
+.content .outerCard .innerCard .imageSide .svgContainer {
+  position: relative;
+  max-width: 32rem;
+  max-height: 18rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+  transition: 200ms all;
+  /************************************************/
+}
+.content .outerCard .innerCard .imageSide .svgContainer > div {
+  position: unset !important;
+}
+.content .outerCard .innerCard .imageSide .svgContainer .image {
+  object-fit: contain;
+  height: 100% !important;
+  position: relative !important;
+  width: unset !important;
+}
+.content .outerCard .innerCard .imageSide .svgContainer::before {
+  content: "";
+  background-size: cover;
+  inset: 0px;
+  position: absolute;
+  max-width: 0;
+  z-index: 2;
+  transition: max-width 1000ms ease-in-out;
+}
+.content .outerCard .innerCard .imageSide .buttonContainer {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.content .outerCard .innerCard .imageSide .buttonContainer > a {
+  color: #fcfbf4;
+  background-color: #282825;
+  position: absolute;
+  margin: 0 auto;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: x-large;
+  font-weight: 800;
+  text-align: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+}
+.content .outerCard:nth-child(even) .innerCard {
+  flex-direction: row-reverse;
+}
+.content .outerCard:nth-child(even) .imageSide .buttonContainer > a {
+  color: #282825;
+  background-color: #fcfbf4;
+}
+.content .outerCard:hover .innerCard .imageSide .svgContainer::before {
+  max-width: 32rem;
+}
+.content :nth-child(1) .imageSide .svgContainer::before {
+  background-image: url("/svg/Colored App.svg");
+}
+.content :nth-child(2) .imageSide .svgContainer::before {
+  background-image: url("/svg/Colored Blog.svg");
+}
+.content :nth-child(3) .imageSide .svgContainer::before {
+  background-image: url("/svg/Colored Commerce.svg");
+}
+
+/*# sourceMappingURL=card.module.css.map */

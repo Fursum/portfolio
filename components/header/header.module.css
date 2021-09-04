@@ -1,0 +1,35 @@
+.header {
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: #282825;
+  color: #fcfbf4;
+  width: 100vw;
+  padding-block: 0.6rem;
+}
+.header .logo {
+  cursor: pointer;
+  user-select: none;
+}
+.header .contactButton {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: bottom;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  border-radius: 0.6rem;
+  position: absolute;
+  right: 2.5rem;
+  top: 1.2rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/*# sourceMappingURL=header.module.css.map */

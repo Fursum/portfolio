@@ -1,0 +1,113 @@
+$dark-color: #dcdcd1;
+$mid-color: #faf8eb;
+$white: #fcfbf4;
+$black: #282825;
+
+@keyframes notification-animate {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+  90%{
+    transform: scale(1.1);
+    opacity: 1;
+  }
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}
+}
+
+.outerContact {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-inline: max(1rem, 10vw);
+  margin-top: 2rem;
+  gap: 1rem;
+
+  color: $black;
+
+  .contactButton {
+    display: flex;
+    position: relative;
+
+    background-color: $dark-color;
+
+    min-height: 15rem;
+    min-width: 15rem;
+
+    text-align: center;
+    align-items: center;
+
+    cursor: pointer;
+    border-radius: 0.5rem;
+
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+    
+
+    &:hover{
+      transform: scale(105%);
+    }
+
+    > h2 {
+      font-size: 1.4rem;
+      position: absolute;
+      width: 100%;
+      bottom: 10%;
+    }
+
+    //Logos
+    > svg {
+      display: block;
+      margin: 0 auto;
+      transform: translateY(-25%);
+    }
+
+    .copyNotification{
+
+      background-color: $black;
+      color: $white;
+
+      font-size: 0.9rem;
+
+      position: absolute;
+      bottom:0.6rem;
+
+      width: calc(100% - 5rem);
+      margin-inline: 2.5rem;
+      padding-inline: 0.5rem;
+      padding-block: 0.25rem;
+
+      border-radius: 0.5rem;
+
+      animation: notification-animate .1s ease-out;
+
+    }
+
+    .loadingWrapper{
+
+      position: absolute;
+      bottom:0.5rem;
+      height: 2rem;
+      width: 100%;
+
+      animation: notification-animate .1s ease-out;
+      
+      > svg{
+        margin: 0 auto;
+      }
+    }
+
+    //Github svg scale
+    &:nth-of-type(3) {
+      > svg {
+        height: 70px;
+        width: 70px;
+      }
+    }
+  }
+}

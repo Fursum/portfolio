@@ -1,0 +1,39 @@
+.processWrapper {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.processWrapper .outerCard {
+  background-color: #faf8eb;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1;
+  max-width: 60rem;
+  min-height: 25rem;
+  margin-inline: 1.5rem;
+  margin-top: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px;
+}
+.processWrapper .outerCard .textSide {
+  flex: 1 1 20rem;
+  margin: 2rem;
+  margin-top: 1rem;
+}
+.processWrapper .outerCard .textSide > p {
+  font-size: large;
+  margin-top: 2rem;
+}
+.processWrapper .outerCard .imageSide {
+  display: flex;
+  flex: 1 1;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 1rem;
+  margin-block: 1.5rem;
+}
+
+/*# sourceMappingURL=process.module.css.map */

@@ -1,8 +1,10 @@
-import Header from '../components/header/header'
-import type { NextPage } from 'next'
-import styles from '../components/card/card.module.css'
-import { Fragment } from 'react'
-import Card from '../components/card'
+import type { NextPage } from "next";
+import { Fragment } from "react";
+
+import Header from "../components/header";
+import Card from "../components/homeCard";
+
+import styles from "../components/homeCard/card.module.css";
 
 const Home: NextPage = () => {
   return (
@@ -24,6 +26,6 @@ const Home: NextPage = () => {
       </div>
     </Fragment>
   );
-}
+};
 
-export default Home
+export default Home;

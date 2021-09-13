@@ -1,0 +1,53 @@
+$dark-color: #dcdcd1;
+$mid-color: #faf8eb;
+$white: #fcfbf4;
+$black: #282825;
+
+.processWrapper {
+
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2rem;
+
+  .outerCard {
+    background-color: $mid-color;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1;
+
+    max-width: 60rem;
+    min-height: 25rem;
+
+    margin-inline: 1.5rem;
+    margin-top: 2rem;
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px;
+
+    .textSide {
+      flex: 1 1 20rem;
+      margin: 2rem;
+      margin-top: 1rem;
+
+      > p {
+        font-size: large;
+        margin-top: 2rem;
+      }
+    }
+
+    .imageSide {
+      display: flex;
+      flex: 1 1;
+      align-items: center;
+      justify-content: center;
+
+      margin-inline: 1rem;
+      margin-block: 1.5rem;
+    }
+  }
+}

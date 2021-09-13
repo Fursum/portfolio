@@ -1,7 +1,8 @@
 import { useRouter } from "next/dist/client/router";
-import Image from "next/image";
 import { FunctionComponent } from "react";
 import styles from "./header.module.css";
+import {MailWhite} from "../../public/svg-component";
+import Link from "next/link";
 
 const Header: FunctionComponent = () => {
   const router = useRouter();
@@ -20,10 +21,10 @@ const Header: FunctionComponent = () => {
   return (
     <div className={styles.header}>
       <div className={styles.logo} onClick={scrollToTop}>
-        Fursum
+        <Link href={"/"}>Fursum</Link>
       </div>
       <button onClick={contactButtonClick} className={styles.contactButton}>
-        <img src={"/svg/Mail - Thick Rounded.svg"} />
+        <MailWhite/>
       </button>
     </div>
   );

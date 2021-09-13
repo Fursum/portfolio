@@ -29,7 +29,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 20rem;
   font-size: 1.5rem;
 }
 .content .outerCard .innerCard .textSide :first-child {
@@ -102,7 +101,7 @@
   color: #282825;
   background-color: #fcfbf4;
 }
-.content .outerCard:hover .innerCard .imageSide .svgContainer::before {
+.content .outerCard:hover .innerCard .imageSide .svgContainer::before, .content .outerCard:focus-within .innerCard .imageSide .svgContainer::before, .content .outerCard:active .innerCard .imageSide .svgContainer::before {
   max-width: 32rem;
 }
 .content :nth-child(1) .imageSide .svgContainer::before {

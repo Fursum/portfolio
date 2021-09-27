@@ -4,17 +4,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-inline: 1.5rem;
   margin-bottom: 2rem;
 }
 .processWrapper .outerCard {
   background-color: #faf8eb;
+  color: #282825;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex: 1 1;
   max-width: 60rem;
-  min-height: 25rem;
-  margin-inline: 1.5rem;
+  min-height: 20rem;
   margin-top: 2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px;
 }
@@ -25,7 +26,9 @@
 }
 .processWrapper .outerCard .textSide > p {
   font-size: large;
+  line-height: 1.6rem;
   margin-top: 2rem;
+  white-space: pre-line;
 }
 .processWrapper .outerCard .imageSide {
   display: flex;

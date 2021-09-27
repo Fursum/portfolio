@@ -1,0 +1,43 @@
+$dark-color: #dcdcd1;
+$mid-color: #faf8eb;
+$white: #fcfbf4;
+$black: #282825;
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  5% {
+    transform: translateY(-1rem);
+  }
+  10% {
+    transform: translateY(0);
+  }
+
+  12% {
+    transform: translateY(-0.2rem);
+  }
+
+  14% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.outer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: $black;
+
+  > svg {
+    animation: bounce 4s ease-in-out infinite;
+  }
+
+  > h1 {
+    text-align: center;
+    padding-inline: 1rem;
+  }
+}

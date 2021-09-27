@@ -10,11 +10,12 @@ $black: #282825;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin-inline: 1.5rem;
     margin-bottom: 2rem;
 
   .outerCard {
     background-color: $mid-color;
+    color:$black;
 
     display: flex;
     flex-direction: row;
@@ -22,9 +23,8 @@ $black: #282825;
     flex: 1 1;
 
     max-width: 60rem;
-    min-height: 25rem;
+    min-height: 20rem;
 
-    margin-inline: 1.5rem;
     margin-top: 2rem;
 
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px;
@@ -36,7 +36,9 @@ $black: #282825;
 
       > p {
         font-size: large;
+        line-height: 1.6rem;
         margin-top: 2rem;
+        white-space: pre-line;
       }
     }
 

@@ -1,0 +1,35 @@
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  5% {
+    transform: translateY(-1rem);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  12% {
+    transform: translateY(-0.2rem);
+  }
+  14% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.outer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #282825;
+}
+.outer > svg {
+  animation: bounce 4s ease-in-out infinite;
+}
+.outer > h1 {
+  text-align: center;
+  padding-inline: 1rem;
+}
+
+/*# sourceMappingURL=contactArrow.module.css.map */

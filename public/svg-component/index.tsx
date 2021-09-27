@@ -7,3 +7,4 @@ export { default as Gear } from "./components/gear";
 export { default as Earth } from "./components/earth";
 export { default as Palette } from "./components/palette";
 export {default as Loading} from "./components/loading";
+export {default as Arrow} from "./components/arrow";

@@ -1,14 +1,14 @@
 import type { NextPage } from "next";
 import { Fragment } from "react";
-import Contact from "../components/contactButton";
+import ContactButtons from "../components/contactButton";
 import ContactProcess from "../components/contactProcess";
-import Header from "../components/header";
+import ContactArrow from "../components/contactArrow";
 
 const ContactPage: NextPage = () => {
   return (
     <Fragment>
-      <Header />
-      <Contact />
+      <ContactButtons />
+      <ContactArrow />
       <ContactProcess/>
     </Fragment>
   );

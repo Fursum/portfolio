@@ -1,7 +1,5 @@
 
-const HomeLocalization = (lang?:string) => {
-
-  const text = {
+const HomeLocalization = {
     en: {
       cards: [
         {
@@ -38,30 +36,5 @@ const HomeLocalization = (lang?:string) => {
       ],
     },
   };
-
-  switch(lang?.substring(0,2)){
-    case "tr":
-        return text.tr;
-    case "en":
-        return text.en;
-    default:
-        return browserLang();
-  }
-
-  function browserLang(){
-
-    if (
-      typeof window !== "undefined" &&
-      typeof window.navigator !== "undefined"
-    ) {
-      if (navigator.language.toLowerCase().startsWith("tr"))
-        return text.tr;
-    }
-
-    return text.en;
-
-  }
-  
-};
 
 export default HomeLocalization;

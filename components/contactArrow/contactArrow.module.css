@@ -1,21 +1,12 @@
 @keyframes bounce {
-  0% {
+  0%, 10%, 14%, 100% {
     transform: translateY(0);
   }
   5% {
     transform: translateY(-1rem);
   }
-  10% {
-    transform: translateY(0);
-  }
   12% {
     transform: translateY(-0.2rem);
-  }
-  14% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 .outer {

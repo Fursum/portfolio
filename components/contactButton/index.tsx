@@ -1,6 +1,6 @@
 import { FunctionComponent, useState } from "react";
 import styles from "./contact.module.css";
-import { Discord, MailBlack, GitHub, Loading } from "../../public/svg-component";
+import { Discord, MailBlack, GitHub, Loading } from "@public/svg-component";
 import Link from "next/link";
 
 /**

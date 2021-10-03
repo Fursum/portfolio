@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import Link from "next/link";
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import styles from "./languageSelect.module.css";
 
 const LanguageSelect:FunctionComponent = () => {

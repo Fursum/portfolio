@@ -1,4 +1,3 @@
-
 const HomeLocalization = {
     en: {
       cards: [

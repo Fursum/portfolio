@@ -1,8 +1,8 @@
 import {FunctionComponent } from "react";
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 
 import ProcessCard from "./component";
-import Localization from "../../localization";
+import Localization from "@localization";
 
 import styles from "./component/process.module.css"
 

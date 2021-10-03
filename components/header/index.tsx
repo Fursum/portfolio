@@ -1,7 +1,7 @@
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import { FunctionComponent } from "react";
 import styles from "./header.module.css";
-import { MailWhite } from "../../public/svg-component";
+import { MailWhite } from "@public/svg-component";
 import Link from "next/link";
 
 const Header: FunctionComponent = () => {

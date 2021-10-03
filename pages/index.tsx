@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/dist/client/router";
 
-import Card from "../components/homeCard";
-import Localization from "../localization";
+import Card from "@components/homeCard";
+import Localization from "@localization";
 
-import styles from "../components/homeCard/card.module.css";
+import styles from "@components/homeCard/card.module.css";
 
 const Home: NextPage = () => {
 

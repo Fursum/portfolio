@@ -5,7 +5,7 @@ import {
   Gear,
   Palette,
   Earth,
-} from "../../../public/svg-component";
+} from "@public/svg-component";
 
 type svgOption = "Earth" | "Palette" | "Gear" | "Mail";
 

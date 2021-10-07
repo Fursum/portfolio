@@ -19,6 +19,7 @@ class MyDocument extends Document {
           <link rel="shortcut icon" href="/svg/Favicon.svg" />
           <meta name="author" content="Fursum" />
           <meta property="description" content="My personal portfolio." />
+          <meta title="Fursum"/>
 
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content="Portfolio" />

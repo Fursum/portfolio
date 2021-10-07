@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 
 import Card from "@components/homeCard";
 import Localization from "@localization";

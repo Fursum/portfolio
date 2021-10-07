@@ -23,6 +23,7 @@ const images = [
   <Image
     key={1}
     src={"/svg/Minimalist App White.svg"}
+    alt={"Minimalist app site illustration."}
     className={styles.image}
     //width={cardDimensions.width}
     //height={cardDimensions.height}
@@ -31,6 +32,7 @@ const images = [
   <Image
     key={2}
     src={"/svg/Minimalist Blog Black.svg"}
+    alt={"Minimalist blog site illustration."}
     className={styles.image}
     //width={cardDimensions.width}
     //height={cardDimensions.height}
@@ -39,6 +41,7 @@ const images = [
   <Image
     key={3}
     src={"/svg/Minimalist Commerce White.svg"}
+    alt={"Minimalist commerce site illustration."}
     className={styles.image}
     //width={cardDimensions.width}
     //height={cardDimensions.height}

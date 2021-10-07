@@ -9,14 +9,14 @@ import Document, {
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
-
     return initialProps;
   }
 
   render() {
     return (
-      <Html lang="tr">
+      <Html>
         <Head>
+          <link rel="shortcut icon" href="/svg/Favicon.svg" />
           <meta name="author" content="Fursum" />
           <meta property="description" content="My personal portfolio." />
 
@@ -39,3 +39,5 @@ class MyDocument extends Document {
     );
   }
 }
+
+export default MyDocument;

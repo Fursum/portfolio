@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           <h2>{text.cards[1].title}</h2>
           <h5>{text.cards[1].content}</h5>
         </Card>
-        <Card id={2} link={"/"}>
+        <Card id={2} link={"/commerce"}>
           <h2>{text.cards[2].title}</h2>
           <h5>{text.cards[2].content}</h5>
         </Card>

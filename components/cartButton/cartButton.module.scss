@@ -1,0 +1,87 @@
+@keyframes Selected {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.3) rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(1065deg);
+    }
+}
+
+@keyframes Deselected {
+    0% {
+        opacity: 1;
+        transform: scale(1) rotate(1065deg);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(0.3) rotate(0deg);
+    }
+}
+
+.tempContainer {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+
+    .outerButton {
+        transform: scale(200%);
+        position: relative;
+        padding: 1em;
+        width: max-content;
+        margin: auto;
+        cursor: pointer;
+        user-select: none;
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-color: cyan;
+
+            transform-origin: center;
+            transform: rotate(-15deg);
+
+            left: 30%;
+            top: -5%;
+
+            width: 2.5em;
+            height: 4em;
+
+            z-index: -2;
+            opacity: 0;
+        }
+
+        .cartCount {
+            position: absolute;
+            top: -5px;
+            left: 2px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .cartName {
+            position: absolute;
+            bottom: 0;
+            left: 2px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .active {
+        &::after {
+            animation: Selected 1s cubic-bezier(0.08, 0.44, 0.05, 1.12);
+            opacity: 1;
+        }
+    }
+
+    .inactive {
+        &::after {
+            animation: Deselected 0.5s cubic-bezier(0.58, -0.28, 0.94, 0.68);
+        }
+    }
+}

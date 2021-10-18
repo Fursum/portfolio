@@ -1,0 +1,36 @@
+$color-black: #282825;
+$color-white: #fcfbf4;
+
+.modal{
+
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+    backdrop-filter: blur(10px);
+    z-index: 100;
+
+    &::after{
+
+        position: fixed;
+        content: "Coming soon!";
+
+        font-size: x-large;
+        font-weight: bold;
+
+        background-color: $color-white;
+        color: $color-black;
+
+        padding: 1em;
+        border-radius: 0.5em;
+
+        box-shadow: rgba($color-black, 0.3) 0 2px 20px;
+
+        left:calc(50% - 1em - 5.5ch);
+        top:calc(50% - 1em);
+
+    }
+
+}

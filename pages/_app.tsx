@@ -5,9 +5,6 @@ import Layout from '@components/layout'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <head>
-        <title>Fursum</title>
-      </head>
       <Layout>
         <Component {...pageProps} />
       </Layout>
